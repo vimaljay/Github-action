@@ -1,8 +1,8 @@
 name: my-first23adsasd
 on:
-  push:
-    branches:
-       - main
+ # push:
+  #  branches:
+   #    - main
   workflow_dispatch:
     inputs:
       name:
