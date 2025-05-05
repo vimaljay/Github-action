@@ -1,9 +1,9 @@
 name: my-first23adsasd
 on:
-  Push:
+  push:
     branches:
        - main
-workflow-dispatch:
+workflow_dispatch:
 inputs:
   name: "type your name"
 jobs:
