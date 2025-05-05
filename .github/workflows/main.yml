@@ -7,6 +7,8 @@ on:
     inputs:
       name:
         description: "type your name"
+        required: true
+        default: "World"
 jobs:
     greetings:
       runs-on: ubuntu-latest
