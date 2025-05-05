@@ -16,5 +16,5 @@ jobs:
       - name: Print data
         run: |
           echo "Input guy:${{github.event.inputs.name}}"
-          echo "actual guy:${{github.actor}}"
+         #echo "actual guy:${{github.actor}}"
      
