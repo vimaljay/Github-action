@@ -14,5 +14,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Print data
-        run: echo "Input guy:${{github.event.inputs.name}}"
+        run: |
+        echo "Input guy:${{github.event.inputs.name}}"
+        echo "actual guy:${{github.actor}}"
      
