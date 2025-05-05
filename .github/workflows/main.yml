@@ -3,9 +3,10 @@ on:
   push:
     branches:
        - main
-workflow_dispatch:
-inputs:
-  name: "type your name"
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "type your name"
 jobs:
     greetings:
       runs-on: ubuntu-latest
