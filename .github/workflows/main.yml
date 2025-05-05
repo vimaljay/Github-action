@@ -1,0 +1,15 @@
+name: my-first23adsasd
+on:
+  Push:
+    branches:
+       - main
+workflow-dispatch:
+inputs:
+  name: "type your name"
+jobs:
+    greetings:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Print data
+        run: echo "Input guy:"
+     
