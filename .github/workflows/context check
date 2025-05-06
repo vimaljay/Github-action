@@ -1,0 +1,13 @@
+name: contextprint
+on:
+  push:
+    branches-ignore: main
+jobs:
+  contextprintjob:
+    name: contextprintname
+    runs-on: ubuntu-latest
+    steps:
+      - name: context-step
+        env:
+        CONTEXT_ITEM :  ${{ toJson(github) }}
+        run: echo " CONTEXT_ITEM " ${CONTEXT_ITEM}
