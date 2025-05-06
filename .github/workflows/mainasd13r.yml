@@ -1,0 +1,12 @@
+name: contextprint
+on:
+  push-ignore:
+    branches:
+      main
+jobs:
+  runs-on: ubuntu-latest
+    steps:
+      context-step:
+      env:
+      CONTEXT_ITEM = toJson ${{ context.github }}
+      echo " CONTEXT_ITEM " CONTEXT_ITEM
