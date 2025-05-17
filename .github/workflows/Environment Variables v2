@@ -3,6 +3,7 @@ on:
   push: 
     branches: feature/global-env
 #pushasd asdasd
+#new
 env:
   GLOBAL_VAR: test
 jobs:
