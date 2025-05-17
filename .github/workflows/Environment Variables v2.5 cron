@@ -1,7 +1,10 @@
-name: Environment Variables V2
+name: Environment Variables V3 cron
 on:
   push: 
     branches: feature/global-env
+  schedule:
+    # Runs at 3:00 AM UTC every day
+    - cron: '*/1 * * * *'
 #pushasd asdasd
 #new
 env:
