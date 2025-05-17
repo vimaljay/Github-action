@@ -2,7 +2,7 @@ name: Environment Variables V2
 on:
   push:
     branches: feature/global-env
-#push
+#pushasd
 env:
   GLOBAL_VAR: test
 jobs:
