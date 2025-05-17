@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: context-step
-        env:
-        CONTEXT_ITEM :  ${{ toJson(github) }}
-        run: echo " CONTEXT_ITEM " ${CONTEXT_ITEM}
+        run:
+        CONTEXT_ITEM =  ${{ toJson(github) }}
+        run: echo " CONTEXT_ITEM  ${CONTEXT_ITEM} "
   
