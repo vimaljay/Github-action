@@ -1,8 +1,8 @@
 name: Environment Variables V2
 on:
-  push:
+  push: 
     branches: feature/global-env
-#pushasd
+#pushasd asdasd
 env:
   GLOBAL_VAR: test
 jobs:
