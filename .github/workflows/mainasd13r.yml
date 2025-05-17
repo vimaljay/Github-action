@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: context-step
         run: |
-        CONTEXT_ITEM =  ${{ toJson(github) }}
+        #CONTEXT_ITEM =  ${{ toJson(github) }}
+        CONTEXT_ITEM='${{ toJson(github) }}'
         run: echo " CONTEXT_ITEM  ${CONTEXT_ITEM} "
   
