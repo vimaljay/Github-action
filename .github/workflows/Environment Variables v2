@@ -1,4 +1,4 @@
-name: Environment Variables
+name: Environment Variables V2
 on:
   push:
     branches: feature/global-env
