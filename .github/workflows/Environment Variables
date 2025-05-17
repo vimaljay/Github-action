@@ -2,6 +2,7 @@ name: Environment Variables
 on:
   push:
     branches: feature/global-env
+#push
 env:
   GLOBAL_VAR: test
 jobs:
@@ -9,7 +10,7 @@ jobs:
     name: A Job
     runs-on: ubuntu-latest
     steps:
-      - name: Output Global Variable
+      - name: Output Global Variable        
         run: echo "${GLOBAL_VAR}"
   second-job:
     name: Another Job
