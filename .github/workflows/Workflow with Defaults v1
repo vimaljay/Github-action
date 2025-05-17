@@ -1,0 +1,25 @@
+name: Workflow with Defaults
+
+on:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./src
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Print Current Directory
+        run: pwd  # This command will execute in the ./src directory
+
+      - name: List Files in ./src
+        run: ls  # Uses bash shell and ./src directory as default
