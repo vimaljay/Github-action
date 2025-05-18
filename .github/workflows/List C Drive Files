@@ -1,0 +1,12 @@
+name: List C Drive Files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  list-c-drive-files:
+    runs-on: windows-latest
+
+    steps:
+      - name: List all files and directories in C:\
+        run: dir C:\
