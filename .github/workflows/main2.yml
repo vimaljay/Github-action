@@ -1,7 +1,7 @@
 name: Context Information
 on:
   push:
-    branches-ignore: main
+    branches: main
 jobs:
   show-context:
     name: Show Context
