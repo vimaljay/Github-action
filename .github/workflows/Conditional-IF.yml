@@ -16,7 +16,7 @@ jobs:
           # Add more commands here, each on a new line
           echo "You can add more commands in this block"
       - name: Print just the repo name       
-       # run: echo "Repo name: ${GITHUB_REPOSITORY##*/}"
+        run: echo github.repository
         shell: bash
       - name: Print just the repo name
         run: echo "Repo name:" $GITHUB_REPOSITORY  
