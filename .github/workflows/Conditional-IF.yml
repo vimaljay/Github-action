@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Run only on main branch
         #if: github.ref == 'refs/heads/main'
-        if: github.repository == 'vimaljay/Github-action'
+        if: github.repository == 'vimaljay/Github-action123'
         run: |
-          echo "This runs only on vims branch"
+          echo "This runs only on NON vims branch"
           # Add more commands here, each on a new line
           echo "You can add more commands in this block"
       - name: Print just the repo name       
